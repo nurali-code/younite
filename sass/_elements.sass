@@ -1,0 +1,92 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    border: none
+    outline: none
+
+$prime: #8E8BFF
+$second: #000
+
+html
+    scroll-behavior: smooth
+
+body
+    min-height: 100vh
+    color: #fff
+    background-color: #1E1D26
+    font-family: 'Gilroy', sans-serif
+    display: flex
+    flex-direction: column
+
+img
+    max-width: 100%
+
+a,
+button
+    color: white
+    display: inline-block
+    text-decoration: none
+    transition: all ease .2s
+    background-color: transparent
+    &:active
+        transform: scale(.98)
+
+    img
+        display: block
+
+.container 
+    max-width: 1180px 
+    padding: 0 
+    width: 100% 
+    margin: 0 auto
+
+strong
+    font-weight: 600
+
+mark
+    background-color: $prime
+    color: #000
+    display: inline-block
+    padding: 2px 8px 4px
+
+.btn
+    font-size: 17px
+    line-height: 30.43px
+    font-weight: 600
+    width: fit-content
+
+    border-radius: 50px
+    color: white
+    background-color: $prime
+    padding: 7px 25px
+    position: relative
+    z-index: 1
+    gap: 18px
+    
+    &[disabled]
+        background-color: transparent
+        pointer-events: none
+        color: transparent
+
+    img 
+        display: block
+
+.fx, .fxb
+    display: flex
+    align-items: center
+
+.fxb
+    justify-content: space-between
+
+@media screen and ( max-width: 1500px )
+    .btn
+        font-size: 22px
+        padding: 18px
+
+@media screen and ( max-width: 700px )
+    mark
+        padding: 2px 4px 3px
+    .btn
+        font-size: 20px
+        padding: 22px
