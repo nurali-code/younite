@@ -1,13 +1,51 @@
-footer 
-   background-color: $prime 
-   text-align: center
-   padding: 11px
-   // margin-top: auto 
-   img 
-      margin: 0 auto 
-      display: block
+.footer
+   border-top: 2px solid #00E0FF0D
+   box-shadow: 0px 0px 23px 0px #00000000 inset
+   padding: 90px 0
+   background: linear-gradient(0deg, rgba(35, 11, 0, 0.3), rgba(35, 11, 0, 0.3)), radial-gradient(50% 50% at 50% 0%, rgba(142, 114, 255, 0.35) 0%, rgba(0, 10, 255, 0) 100%)
 
-   @media screen and ( max-width: 700px )
-      img 
-         max-width: 122px
-      
+   .container
+      align-items: stretch
+
+   &__text
+      font-size: 14px
+      line-height: 18.2px
+      color: #615C7E
+      &.fx
+         font-weight: bold
+         gap: 8px
+
+   &__phone
+      font-size: 22px
+      font-weight: 400
+      &:hover
+         text-decoration: underline
+
+   &-soc
+      gap: 20px
+      &.--second
+         gap: 15px 13px
+         justify-content: flex-end
+
+      a
+         &:hover
+            opacity: .7
+
+   &__email
+      font-size: 14px
+      text-align: right
+      min-width: 50%
+      &:hover
+         text-decoration: underline
+
+   .col
+      flex-direction: column
+      gap: 33px
+
+      &:first-child
+         align-items: flex-start
+      &:nth-child(2)
+         padding: 50px 0
+      &:nth-child(3)
+         align-items: flex-end
+         text-align: right
