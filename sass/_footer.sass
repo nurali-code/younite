@@ -24,7 +24,7 @@
    &-soc
       gap: 20px
       &.--second
-         gap: 15px 13px
+         gap: 15px 50%
          justify-content: flex-end
 
       a
@@ -40,12 +40,35 @@
 
    .col
       flex-direction: column
-      gap: 33px
+      gap: 20px
 
       &:first-child
+         min-width: 243px
          align-items: flex-start
       &:nth-child(2)
-         padding: 50px 0
+         padding: 20px 0
       &:nth-child(3)
+         min-width: 243px
          align-items: flex-end
          text-align: right
+
+   @media screen and ( max-width: 700px )
+      padding: 45px 0
+      .col
+         width: 100%
+         min-width: 100%
+         text-align: center !important
+         align-items: center !important
+         gap: 22px
+         order: 1
+         &:nth-child(3)
+            order: 2
+            padding: 75px 0
+         &:nth-child(2)
+            order: 3
+            padding: 0
+            gap: 30px
+
+      &-soc
+         &.--second
+            justify-content: center !important

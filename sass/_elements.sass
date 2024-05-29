@@ -35,10 +35,10 @@ button
     img
         display: block
 
-.container 
-    max-width: 1180px 
-    padding: 0 
-    width: 100% 
+.container
+    max-width: 1180px
+    padding: 0
+    width: 100%
     margin: 0 auto
 
 strong
@@ -64,13 +64,13 @@ mark
     position: relative
     z-index: 1
     gap: 18px
-    
+
     &[disabled]
         background-color: transparent
         pointer-events: none
         color: transparent
 
-    img 
+    img
         display: block
 
     &:hover
@@ -88,9 +88,13 @@ mark
 .fxw
     flex-wrap: wrap
 
-@media screen and ( max-width: 1500px )
-    .btn
+@media screen and ( max-width: 1234px  )
+    .container
+        padding: 0 17px
 
-@media screen and ( max-width: 700px )
-    mark
-        
+@media screen and ( max-width: 900px )
+    .btn 
+        gap: 10px
+        padding: 7px 23px
+        img 
+            max-width: 25px
