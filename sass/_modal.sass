@@ -22,14 +22,14 @@
         top: 50%
         left: 50%
         transform: translate(-50%, -30%)
-        background-color: rgba(white, .9)
-        backdrop-filter: blur(10px)
+        background-color: rgba(white, .8)
+        backdrop-filter: blur(15px)
         max-width: 540px
         overflow-y: scroll
         color: #000
         text-align: left
         padding: 70px 30px
-        border-radius: 20px
+        border-radius: 30px
         transition: all ease .3s
         -ms-overflow-style: none
         scrollbar-width: none
@@ -41,25 +41,28 @@
         h3
             font-weight: 400
             font-size: 30px
+            line-height: 130%
 
             text-align: center
 
-        @media screen and ( max-width: 700px )
-            padding: 30px 30px 40px
+        @media screen and ( max-width: 500px )
+            padding: 50px 30px 46px
+            h3
+                font-size: 20px
 
     &-close
         position: absolute
         top: 18px
         right: 22px
         border-radius: 50%
-        font-size: 24px
-        background-color: rgba(#1E1D26, .9)
+        font-size: 26px
+        background-color: rgba(#1E1D26, .4)
         color: #fff
         width: 34px
         height: 34px
         justify-content: center
         @media screen and ( max-width: 500px )
-            top: 12px
+            top: 11px
             right: 12px
 
     &.is__active
